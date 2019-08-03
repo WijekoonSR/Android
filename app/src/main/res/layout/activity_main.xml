@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
     tools:context=".MainActivity">
 
     <Button
@@ -35,7 +34,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Choose Difficulty"
+        android:text="Select Level"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,16 +100,17 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="127dp"
-        android:layout_marginLeft="127dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
         android:layout_marginTop="38dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginRight="143dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
         android:layout_marginBottom="175dp"
-        android:text="Select Level"
+        android:text="Exit"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDifficulty" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDifficulty"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
