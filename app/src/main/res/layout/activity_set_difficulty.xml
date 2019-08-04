@@ -10,26 +10,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/lblSelect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="122dp"
-            android:layout_marginLeft="122dp"
-            android:layout_marginTop="165dp"
-            android:layout_marginEnd="123dp"
-            android:layout_marginRight="123dp"
-            android:layout_marginBottom="534dp"
-            android:text="Select Difficulty"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-58dp">
 
         <Button
             android:id="@+id/btnEasy"
@@ -37,16 +20,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="151dp"
             android:layout_marginLeft="151dp"
+            android:layout_marginTop="267dp"
             android:layout_marginEnd="172dp"
             android:layout_marginRight="172dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="316dp"
             android:text="Easy"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/btnMedium"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblSelect" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnMedium"
@@ -54,32 +38,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginLeft="150dp"
+            android:layout_marginTop="164dp"
             android:layout_marginEnd="168dp"
             android:layout_marginRight="168dp"
             android:text="Medium"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/btnHard"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnEasy" />
-
-        <Button
-            android:id="@+id/btnHard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="151dp"
-            android:layout_marginLeft="151dp"
-            android:layout_marginEnd="172dp"
-            android:layout_marginRight="172dp"
-            android:layout_marginBottom="228dp"
-            android:text="Hard"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnMedium" />
+            app:layout_constraintTop_toBottomOf="@+id/btnEasy" />
 
         <Button
             android:id="@+id/btnBack"
@@ -87,7 +54,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="62dp"
             android:layout_marginLeft="62dp"
-            android:layout_marginTop="401dp"
             android:layout_marginEnd="261dp"
             android:layout_marginRight="261dp"
             android:layout_marginBottom="85dp"
@@ -95,61 +61,26 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblSelect" />
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/lblSelect"
+        android:id="@+id/lblSelect1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
         android:layout_marginLeft="122dp"
-        android:layout_marginTop="165dp"
         android:layout_marginEnd="123dp"
         android:layout_marginRight="123dp"
-        android:layout_marginBottom="534dp"
+        android:layout_marginBottom="8dp"
         android:text="Select Difficulty"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnEasy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginLeft="151dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginRight="172dp"
-        android:layout_marginBottom="8dp"
-        android:text="Easy"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnMedium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblSelect" />
-
-    <Button
-        android:id="@+id/btnMedium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
-        android:text="Medium"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnHard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEasy" />
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.292" />
 
     <Button
         android:id="@+id/btnHard"
@@ -159,29 +90,12 @@
         android:layout_marginLeft="151dp"
         android:layout_marginEnd="172dp"
         android:layout_marginRight="172dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="308dp"
         android:text="Hard"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMedium" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="401dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="85dp"
-        android:text="Back"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblSelect" />
 </androidx.constraintlayout.widget.ConstraintLayout>
